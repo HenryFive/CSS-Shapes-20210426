@@ -1,0 +1,48 @@
+.trapezoid {
+    border-bottom: 20px solid red;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    height: 0;
+    width: 20px;
+}
+.heart{
+    color: red;
+    position: absolute;
+    margin-top: 12px;
+    margin-left: 10px;
+    width: 18px;
+    height: 18px;
+    border-left: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+    background-color: red;
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+  }
+  .heart:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -2px;
+    width: 17px;
+    height: 10px;
+    border-radius: 10px 10px 0 0;
+    background-color: red;    
+    border-top: solid 1px currentColor;
+    border-left: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+  }
+  .heart:after {
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    width: 10px;
+    height: 17px;
+    border-radius: 0 10px 10px 0;
+    background-color: red;
+    border-top: solid 1px currentColor;
+    border-right: solid 1px currentColor;
+    border-bottom: solid 1px currentColor;
+  }
+
+  
